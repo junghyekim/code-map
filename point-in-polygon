@@ -11,7 +11,7 @@ address = "233 E Washington St"
 # add in geocoding
 def decode_address_to_coordinates(address):
     params = {
-            'address' : address,
+            'address' : address +" Syracuse,NY",
             'sensor' : 'false',
     }
     url = 'http://maps.google.com/maps/api/geocode/json?' + urllib.urlencode(params)
